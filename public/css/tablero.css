@@ -1,0 +1,68 @@
+/* Zonas de drop */
+.drop-zone {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px dashed #007bff;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    color: #007bff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-zone:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Posicionamiento */
+#recinto1 { top: 110px; left: 60px; }
+#recinto2 { top: 335px; left: 60px; }
+#recinto3 { top: 585px; left: 70px; }
+#recinto4 { top: 415px; left: 375px; }
+#recinto5 { top: 275px; left: 350px; }
+#recinto6 { top: 100px; left: 340px; }
+#recinto7 { top: 580px; left: 375px; }
+
+/* Fichas originales (en la columna derecha) */
+.ficha {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: grab;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-size: cover;
+    background-position: center;
+}
+
+.ficha:hover {
+    transform: scale(1.1);
+}
+
+.ficha-Rey { background-image: url("/imagenes/ficha1.png"); }
+.ficha-Bigote { background-image: url("/imagenes/ficha2.png"); }
+.ficha-SombreroNegro { background-image: url("/imagenes/ficha3.png"); }
+.ficha-Huevo { background-image: url("/imagenes/ficha4.png"); }
+.ficha-Patito { background-image: url("/imagenes/ficha5.png"); }
+.ficha-SombreroAmarillo { background-image: url("/imagenes/ficha6.png"); }
+
+/* Fichas clonadas dentro de las zonas */
+.drop-zone .ficha {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablero */
+#tablero img {
+    max-width: 100%;
+    height: auto;
+}
